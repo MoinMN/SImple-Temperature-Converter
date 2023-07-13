@@ -51,9 +51,9 @@ body h2{
     margin: 2px 10px;
 }
 
-.right input{
+/* .right input{
     cursor: not-allowed;
-}
+} */
 
 .content select{
     width: 235px;
