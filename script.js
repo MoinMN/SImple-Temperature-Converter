@@ -27,17 +27,17 @@ function convertRight() {
     second_option = document.getElementById('temp2').value
 
     if (first_option == 'Degree Celsius' && second_option == 'Fahrenheit') 
-        second_text.value = (Number(first_text) * 9/5) + 32;
+        second_text.value = parseFloat(((Number(first_text) * 9/5) + 32).toFixed(4));
     else if (first_option == 'Degree Celsius' && second_option == 'Kelvin')
-        second_text.value = Number(first_text) + 273.15;
+        second_text.value = parseFloat((Number(first_text) + 273.15).toFixed(4));
     else if (first_option == 'Fahrenheit' && second_option == 'Degree Celsius')
-        second_text.value = (Number(first_text) - 32) * 5/9;
+        second_text.value = parseFloat(((Number(first_text) - 32) * 5/9).toFixed(4));
     else if (first_option == 'Fahrenheit' && second_option == 'Kelvin')
-        second_text.value = (Number(first_text) - 32) * 5/9 + 273.15;
+        second_text.value = parseFloat(((Number(first_text) - 32) * 5/9 + 273.15).toFixed(4));
     else if (first_option == 'Kelvin' && second_option == 'Degree Celsius')
-        second_text.value = Number(first_text) - 273.15;
+        second_text.value = parseFloat((Number(first_text) - 273.15).toFixed(4));
     else if (first_option == 'Kelvin' && second_option == 'Fahrenheit')
-        second_text.value = (Number(first_text) - 273.15) * 9/5 + 32;
+        second_text.value = parseFloat(((Number(first_text) - 273.15) * 9/5 + 32).toFixed(4));
     else
         console.log('Else One')
 }
@@ -61,17 +61,17 @@ function convertLeft() {
     second_option = document.getElementById('temp2').value
 
     if (first_option == 'Degree Celsius' && second_option == 'Fahrenheit') 
-        first_text.value = (Number(second_text) - 32) * 5/9;
+        first_text.value = parseFloat(((Number(second_text) - 32) * 5/9).toFixed(4));
     else if (first_option == 'Degree Celsius' && second_option == 'Kelvin')
-        first_text.value = Number(second_text) - 273.15;
+        first_text.value = parseFloat((Number(second_text) - 273.15).toFixed(4));
     else if (first_option == 'Fahrenheit' && second_option == 'Degree Celsius')
-        first_text.value = (Number(second_text) * 9/5) + 32;
+        first_text.value = parseFloat(((Number(second_text) * 9/5) + 32).toFixed(4));
     else if (first_option == 'Fahrenheit' && second_option == 'Kelvin')
-        first_text.value = (Number(second_text) - 273.15) * 9/5 + 32;
+        first_text.value = parseFloat(((Number(second_text) - 273.15) * 9/5 + 32).toFixed(4));
     else if (first_option == 'Kelvin' && second_option == 'Degree Celsius')
-        first_text.value = Number(second_text) + 273.15;
+        first_text.value = parseFloat((Number(second_text) + 273.15).toFixed(4));
     else if (first_option == 'Kelvin' && second_option == 'Fahrenheit')
-        first_text.value = (Number(second_text) - 32) * 5/9 + 273.15;
+        first_text.value = parseFloat(((Number(second_text) - 32) * 5/9 + 273.15).toFixed(4));
     else
         console.log('Else One')
 }
